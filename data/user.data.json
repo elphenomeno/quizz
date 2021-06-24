@@ -1,0 +1,19 @@
+[
+	{
+		"login": "mein@gmail.com",
+		"password": "aaaaaaaaaa",
+		"role": "ROLE_ADMIN"
+	},
+	
+	{
+		"prenom": "birame",
+		"name": "traore",
+		"login": "ptimein3@gmail.com",
+		"mdp": "uuuuuuuuuu",
+		"password": "uuuuuuuuuu",
+		"role": "ROLE_JOUEUR"
+	}
+	
+
+	
+]
