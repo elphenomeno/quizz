@@ -104,7 +104,7 @@ require_once(ROUTE_DIR."views/inc/header.html.php");
       border:0px;
     }
     body {
-background-image:url(hel.jpg);
+background-image:url(hel.png);
 background-repeat:no-repeat;
 background-position:center center ;
 margin:0%;

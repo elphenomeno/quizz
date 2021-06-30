@@ -5,13 +5,13 @@
 </style>
 <div class="container">
     <div class="row">
-        <div class="col-md-4"><?php require_once(ROUTE_DIR . "views/inc/menu.html.php"); ?>
+        <div class="col-md-3"><?php require_once(ROUTE_DIR . "views/inc/menu.html.php"); ?>
         </div>
-        <div class="col-md-6" style="margin-left:600px;margin-top:-430px;"><br /><br />
-            <p style="font-size:22px;color:red;margin-left:240px">NOMBRE DE QUESTIONS PAR JOUR</p>
-            <button href="#" class="btn btn-primary btn-lg active" style="color:white;background-color:red;width:50px;height:30px;margin-top:-58px;margin-left:790px" role=" button" aria-pressed="true">OK</button>
-            <button href="#" class="btn btn-primary btn-lg active" style="color:white;background-color:black;width:50px;height:30px;margin-top:-58px;margin-left:690px" role=" button" aria-pressed="true">5</button>
-            <div class="gana" style="border:1px solid red">
+        <div class="col-md-6" style="margin-left:510px;margin-top:-500px;"><br /><br />
+            <p style="font-size:22px;color:red;margin-left:100px;">NOMBRE DE QUESTIONS PAR JEU</p>
+            <button href="#" class="btn btn-primary btn-lg active" style="color:white;background-color:black;width:50px;height:30px;margin-top:-60px;margin-left:605px" role=" button" aria-pressed="true">5</button>
+            <button href="#" class="btn btn-primary btn-lg active" style="color:white;background-color:#F7586A;width:50px;height:30px;margin-top:-60px;margin-left:550px" role=" button" aria-pressed="true">OK</button>
+            <div class="gana" style="border:1px solid #F7586A">
                 <p style="font-size:19px;color:black;margin-left:100px">1.Les langages web</p>
                 <div style="margin-left:99px">
                     <input type="checkbox" checked="checked">
@@ -73,6 +73,6 @@
                 </div>
             </div></br>
             <div>
-                <button href="#" class="btn btn-primary btn-lg active" style="color:white;background-color:red;width:150px;height:30px;margin-top:-0px;margin-left:700px" role=" button" aria-pressed="true">SUIVANT</button>
+                <button href="#" class="btn btn-primary btn-lg active" style="color:white;background-color:red;width:100px;height:30px;margin-top:-12px;margin-left:670px" role=" button" aria-pressed="true">SUIVANT</button>
             </div>
             <style>

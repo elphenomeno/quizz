@@ -1,19 +1,180 @@
 [
 	{
+		"prenom": "birame TRAORE",
 		"login": "mein@gmail.com",
 		"password": "aaaaaaaaaa",
 		"role": "ROLE_ADMIN"
 	},
-	
 	{
-		"prenom": "birame",
+		"prenom": "Birame",
 		"name": "traore",
 		"login": "ptimein3@gmail.com",
 		"mdp": "uuuuuuuuuu",
 		"password": "uuuuuuuuuu",
 		"role": "ROLE_JOUEUR"
+	},
+	{
+		"prenom": "mein",
+		"name": "Traore",
+		"login": "ptimein3@gmail.com",
+		"mdp": "PPPPPPPPPP",
+		"password": "PPPPPPPPPP",
+		"role": "ROLE_JOUEUR"
+	},
+	{
+		"prenom": "E221",
+		"name": "DAYS",
+		"login": "E221@gmail.com",
+		"mdp": "zzzzzzzzzz",
+		"password": "zzzzzzzzzz",
+		"role": "ROLE_JOUEUR"
+	},
+	{
+		"prenom": "el",
+		"name": "ph\u00e9nomeno",
+		"login": "elphenomeno@gmail.com",
+		"mdp": "eeeeeeeeee",
+		"password": "eeeeeeeeee",
+		"role": "ROLE_JOUEUR"
+	},
+	{
+		"prenom": "taran",
+		"name": "Diallo",
+		"login": "taran@gmail.com",
+		"mdp": "1111111111",
+		"password": "1111111111",
+		"role": "ROLE_JOUEUR"
+	},
+	{
+		"prenom": "IBRAHIMA",
+		"name": "TRAORE",
+		"login": "ibrahima@gmail.com",
+		"mdp": "aaaaaaaaaa",
+		"password": "aaaaaaaaaa",
+		"role": "ROLE_ADMIN"
+	},
+	{
+		"prenom": "yaya",
+		"name": "sambou",
+		"login": "yaya@gmail.com",
+		"mdp": "yyyyyyyyyy",
+		"password": "yyyyyyyyyy",
+		"role": "ROLE_JOUEUR"
+	},
+	{
+		"prenom": "kandji",
+		"name": "gana",
+		"login": "gana@gmail.com",
+		"mdp": "kkkkkkkkkk",
+		"password": "kkkkkkkkkk",
+		"role": "ROLE_JOUEUR",
+		"id": "60db3514ddbd3"
+	},
+	{
+		"prenom": "imam",
+		"name": "niass",
+		"login": "imam@gmail.com",
+		"mdp": "iiiiiiiiii",
+		"password": "iiiiiiiiii",
+		"role": "ROLE_JOUEUR"
+	},
+	{
+		"prenom": "libass",
+		"name": "bass",
+		"login": "libass@gmail.com",
+		"mdp": "llllllllll",
+		"password": "llllllllll",
+		"role": "ROLE_JOUEUR",
+		"id": "60db35fd2105c"
+	},
+	{
+		"prenom": "freshii",
+		"name": "girl",
+		"login": "fresh@gmail.com",
+		"mdp": "ffffffffff",
+		"password": "ffffffffff",
+		"role": "ROLE_ADMIN",
+		"id": "60dc48de29cf1"
+	},
+	{
+		"prenom": "dior",
+		"name": "sambou",
+		"login": "dior@gmail.com",
+		"mdp": "dddddddddd",
+		"password": "dddddddddd",
+		"role": "ROLE_JOUEUR",
+		"id": "60dc4974afa31"
+	},
+	{
+		"prenom": "mein",
+		"name": "mine",
+		"login": "huit@gmail.com",
+		"mdp": "pppppppppp",
+		"password": "pppppppppp",
+		"role": "ROLE_ADMIN",
+		"id": "60dc4d137eb66"
+	},
+	{
+		"prenom": "yaya",
+		"name": "lek",
+		"login": "yaya@gmail.com",
+		"mdp": "pppppppppp",
+		"password": "pppppppppp",
+		"role": "ROLE_ADMIN",
+		"id": "60dc546508a9b"
+	},
+	{
+		"prenom": "libasse",
+		"name": "laye",
+		"login": "layz@gmail.com",
+		"mdp": "layelaye",
+		"password": "layelaye",
+		"role": "ROLE_ADMIN",
+		"id": "60dc55a849b8b"
+	},
+	{
+		"prenom": "djbjkdz",
+		"name": "zdjdeer",
+		"login": "bbcb@gmail.com",
+		"mdp": "&\u00e9\"'(-",
+		"password": "&\u00e9\"'(-",
+		"role": "ROLE_ADMIN",
+		"id": "60dc56446c3b5"
+	},
+	{
+		"prenom": "ppapap",
+		"name": "mamamam",
+		"login": "mama@gmail.com",
+		"mdp": "pppppppppp",
+		"password": "pppppppppp",
+		"role": "ROLE_ADMIN",
+		"id": "60dc56e42cb57"
+	},
+	{
+		"prenom": "aaaa",
+		"name": "bbbb",
+		"login": "papa@gmail.com",
+		"mdp": "dddddddddd",
+		"password": "dddddddddd",
+		"role": "ROLE_ADMIN",
+		"id": "60dc573ac64aa"
+	},
+	{
+		"prenom": "coudy ly",
+		"name": "wane",
+		"login": "lywanecoudy@gmail.com",
+		"mdp": "wane&\u00e9\"'(",
+		"password": "wane&\u00e9\"'(",
+		"role": "ROLE_ADMIN",
+		"id": "60dc5ad64ced5"
+	},
+	{
+		"prenom": "HHHHHH",
+		"name": "RRRR",
+		"login": "D@GMAIL.COM",
+		"mdp": "VVVVVVV",
+		"password": "VVVVVVV",
+		"role": "ROLE_ADMIN",
+		"id": "60dc5bfa39182"
 	}
-	
-
-	
 ]

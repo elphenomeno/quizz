@@ -41,7 +41,7 @@
                     <a class="nav-link" href="<?= WEB_ROUTE . '?controlleurs=admin&view=tableau.bord' ?>">TABLEAU DE BORD</a>
                     <img class="image" src="<?= WEB_ROUTE . "img/mi.png" ?>" alt=" icone">
                 </li></br>
-                <?php endif; ?>
+                <?php endif ?>
             </ul>
 
         </div>
@@ -78,7 +78,7 @@
 
     .nav-item a:hover {
         background-color: #ddd;
-        border-left: 8px solid red;
+        border-left: 8px solid #F7586A;
 
     }
 

@@ -89,11 +89,7 @@
             $arrayError['password'] = 'les deux password ne sont pas identique';
         }
         if (form_valid($arrayError)){
-            if (est_admin()){
-                    $data[ 'role']= 'ROLE_ADMIN';
-                }else{
-                    $data['role']='ROLE_JOUEUR';
-                }
+            $data['role']=est_admin()?'ROLE_ADMIN':'ROLE_JOUEUR';
                 add_user($data);
             
                 header("location:" .WEB_ROUTE.'?controlleurs=security&view=connexion');

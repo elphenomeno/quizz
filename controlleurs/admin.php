@@ -1,6 +1,6 @@
 
 <?php
-if (!est_admin()) header("location:" . WEB_ROUTE . '?controlleurs=security&views=connexion');
+if (!est_admin()) header("location:" . WEB_ROUTE . '?controlleurs=security&view=connexion');
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     if (isset($_GET['view'])) {
         if ($_GET['view'] == 'liste.question') {
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     } */
 } elseif ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['action'])) {
-        $_POST['action'] = 'inscription';
+        $_POST['action'] == 'inscription';
     }
     unset($_POST['controlleurs']);
     unset($_POST['connexion']);
@@ -29,12 +29,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     unset($_POST['inscription']);
     unset($_POST['action']);
     inscription_admin($_POST, $_FILES);
-    header("location:" . WEB_ROUTE . '?controlleurs=admin&views=creer.admin');
-} else {
+    header("location:" . WEB_ROUTE . '?controlleurs=admin&view=creer.admin');
+} /* else {
     $_SESSION['arrayError'] = $arrayError;
-    header("location:" . WEB_ROUTE . '?controlleurs=admin&views=creer.admin');
+    header("location:" . WEB_ROUTE . '?controlleurs=admin&view=creer.admin');
 
-}
+} */
 function inscription_admin(array $data) : void{
     $arrayError=array();
     extract($data);
@@ -49,15 +49,15 @@ function inscription_admin(array $data) : void{
     if (form_valid($arrayError)){
         if (est_admin()){
                 $data[ 'role']= 'ROLE_ADMIN';
-            }else{
+            }/* else{
                 $data['role']='ROLE_JOUEUR';
-            }
+            } */
             add_user($data);
         
-            header("location:" .WEB_ROUTE.'?controlleurs=security&view=connexion');
+            header("location:" .WEB_ROUTE.'?controlleurs=admin&view=liste.admin');
     } else{
         $_SESSION['arrayError'] = $arrayError;
-        header("location:" .WEB_ROUTE.'?controlleurs=security&view=inscription');
+        header("location:" .WEB_ROUTE.'?controlleurs=admin&view=creer.admin');
     }
    
     
