@@ -8,71 +8,84 @@
         <div class="col-md-3"><?php require_once(ROUTE_DIR . "views/inc/menu.html.php"); ?>
         </div>
         <div class="col-md-6" style="margin-left:510px;margin-top:-500px;"><br /><br />
-            <p style="font-size:22px;color:red;margin-left:100px;">NOMBRE DE QUESTIONS PAR JEU</p>
-            <button href="#" class="btn btn-primary btn-lg active" style="color:white;background-color:black;width:50px;height:30px;margin-top:-60px;margin-left:605px" role=" button" aria-pressed="true">5</button>
-            <button href="#" class="btn btn-primary btn-lg active" style="color:white;background-color:#F7586A;width:50px;height:30px;margin-top:-60px;margin-left:550px" role=" button" aria-pressed="true">OK</button>
-            <div class="gana" style="border:1px solid #F7586A">
-                <p style="font-size:19px;color:black;margin-left:100px">1.Les langages web</p>
-                <div style="margin-left:99px">
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                    <label class="container">HTML
-                    </label></br>
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                    <label class="container">R
-                    </label></br>
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                    <label class="container">JAVA
-                    </label></br>
-                </div>
-                <p style="font-size:19px;color:black;margin-left:100px">2.D'ou vient le corona</p>
-                <div style="margin-left:99px">
+        <?php 
+          $json = file_get_contents(ROUTE_DIR.'data/question.json');
+          $arrayQuestion = json_decode($json, true);  
+          /* $nombrePage = 0;
+          $page = 0;
+          $suivant = 2;
+          $precedent = 0;
+          
+          if (!isset($_GET['page'])) {
+            $page = 1;
+            $_SESSION['questionlist'] = $arrayQuestion;
+            $nombrePage = nombrePageTotal($_SESSION['questionlist'] , 3);
+            $listquestions = get_element_to_play($_SESSION['questionlist'], 3 ,$page);
+          }
 
+          if (isset($_GET['page'])) {
+            $page = $_GET['page'];
+            $suivant = $page+1;
+            $precedent = $page-1;
+            $nombrePage = nombrePageTotal($_SESSION['questionlist'] , 3);
+            $listquestions = get_element_to_play($_SESSION['questionlist'], 3 ,$page);
+          } */
+         ?>
+        <div class="manga">
+        <tr>
+            <th scope="col">Question</th>
+            <th scope="col">modif ou suppression</th><br/><br/>
+        </tr>
+        <?php foreach ($arrayQuestion as $question): ?>
+          <tr> <td><?php echo ($question['question']) ; ?></td> <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                     <td><a name="" id="" class="btn bns btn-success" href="<?= WEB_ROUTE .'?controlleurs=admin&view=editer&id='.$question['id']?>" role="button">MODIFIER&nbsp;<i class="icon-edit"></i></a>
+                          <a name="" id="" class="btn bt btn-danger" href="<?= WEB_ROUTE .'?controlleurs=admin&view=delete&id='.$question['id']?>"  role="button">SUPPRIMER&nbsp;<i class="icon-trash"></i></a><br/></td></tr><br/>
+          <?php endforeach; ?>
+          <?php foreach ($data as $question): ?>
+          <?php endforeach; ?>
                     <div>
-                        <input type="radio" id="huey" name="drone" value="huey" checked>
-                        <label for="huey">italie</label>
-                    </div>
-
-                    <div>
-                        <input type="radio" id="dewey" name="drone" value="dewey">
-                        <label for="dewey">chine</label>
-                    </div>
-                </div>
-                <p style="font-size:19px;color:black;margin-left:100px">3.Quel terme definit langage qui s'adapte sur Android et sur IOS</p>
-                <div style="margin-left:99px">
-                    <label for="name"></label>
-                    <input type="text" id="name" name="name">
-                </div>
-                <p style="font-size:19px;color:black;margin-left:100px">4.Quelle est la premiere ecole de codage gratuite au Senegal?</p>
-                <div style="margin-left:99px">
-                    <div>
-                        <input type="radio" id="huey" name="drone" value="huey" checked>
-                        <label for="huey">Simplon</label>
-                    </div>
-
-                    <div>
-                        <input type="radio" id="dewey" name="drone" value="dewey">
-                        <label for="dewey">Orange digital Center</label>
-                    </div>
-                </div>
-                <p style="font-size:19px;color:black;margin-left:100px">5.Les precurseurs de la revolution digitale</p>
-                <div style="margin-left:99px">
-                    <div>
-                        <input type="radio" id="huey" name="drone" value="huey" checked>
-                        <label for="huey">GAFAM</label>
-                    </div>
-
-                    <div>
-                        <input type="radio" id="dewey" name="drone" value="dewey">
-                        <label for="dewey">CIA-FBI</label>
-                    </div>
-
-
-                </div>
-            </div></br>
-            <div>
-                <button href="#" class="btn btn-primary btn-lg active" style="color:white;background-color:red;width:100px;height:30px;margin-top:-12px;margin-left:670px" role=" button" aria-pressed="true">SUIVANT</button>
+                    <?php if(empty($_GET['page']) || ($_GET['page']==1) ): ?>
+                    <a name="" id="" class="btn btn-danger bx disabled  mt-2 " href="<?=WEB_ROUTE.'?controlleurs=admin&view=liste.question&page='.$precednt;  ?>" role="button">Precedent</a> 
+                    <?php else: ?>
+                        <a name="" id="" class="btn btn-danger bx mt-2  " href="<?=WEB_ROUTE.'?controlleurs=admin&view=liste.question&page='.$precednt;  ?>" role="button">Precedent</a> 
+                    <?php endif ?>
+                    <?php if($_GET['page'] > $nbrPage-1): ?>
+                    <a name="" id="" class="btn bx btn-danger disabled  mt-2 suivant" href="<?=WEB_ROUTE.'?controlleurs=admin&view=liste.question&page='.$suivant; ?>" role="button">Suivant</a>
+                    <?php else: ?>
+                        <a name="" id="" class="btn bx btn-danger  mt-2 suivant" href="<?=WEB_ROUTE.'?controlleurs=admin&view=liste.question&page='.$suivant; ?>" role="button">Suivant</a>
+                    <?php endif ?>
+                          </div>
             </div>
-            <style>
+        </div>
+    </div>
+</div>
+<style>
+  .bns{
+      background-color: yellowgreen;
+    }
+       .manga{
+          position: absolute;
+          left: 49%;
+          top: 42%;
+          border-style: solid;
+          border-color: red;
+          background-color: lightgrey;
+      }
+      .btn{
+        color: white;
+      }
+      .bx{
+        background-color: red;
+        text-decoration: none;
+      }
+      .bt{
+        background-color: red;
+      }
+      @media screen and (max-width: 641px) {
+  .manga {
+    float: left;
+    margin-top: 115%;
+    margin-left: -39%;
+  }
+}
+</style>

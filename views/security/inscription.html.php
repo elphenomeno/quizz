@@ -83,6 +83,7 @@ require_once(ROUTE_DIR."views/inc/header.html.php");
     <br/>
     <button type="submit" class="btn btn-primary">Créer un compte</button>
     </div>
+    
     </div>
     <style type="text/css">
    

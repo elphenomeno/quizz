@@ -44,7 +44,7 @@ h2{
     <th>Prénom/Nom</th>
     
     <th>Role</th>
-    <th>Modifier ou Supprimer</th>
+    <th>Modifier</th>
   </tr>
   <?php foreach ($arrayUser as $user): ?>
   <?php if ($user['role'] == 'ROLE_ADMIN') : ?>
@@ -53,7 +53,7 @@ h2{
      <td><?=$user['role']  ?></td>
      <td>
      <a name="" id="" class="btn w-auto h-auto  bns btn-success" href="<?= WEB_ROUTE .'?controlleurs=admin&view=edit&id='.$user['id']?>" role="button">Modifier&nbsp;<i class="icon-edit"></i></a>
-     <a name="" id="" class="btn w-50 h-50 bt btn-danger" href="<?= WEB_ROUTE .'?controlleurs=admin&view=delete&id='.$user['id']?>" role="button">Supprimer&nbsp;<i class="icon-trash"></i></a>
+    
      </td>
      </tr>
      <?php endif; ?>

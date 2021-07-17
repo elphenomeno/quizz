@@ -1,0 +1,55 @@
+[
+	{
+		"question": "dou vien tu?",
+		"point": "4",
+		"typrep": "radio",
+		"nbr_reps": "2",
+		"reponse": [
+			"on",
+			"dcqd",
+			"gghfh"
+		],
+		"btn_submit": "",
+		"id": "60e45b50b25dc"
+	},
+	{
+		"question": "est ce que tu sidy va a lecol?",
+		"point": "2",
+		"typrep": "checkbox",
+		"nbr_reps": "2",
+		"reponse": [
+			"on",
+			"",
+			"on",
+			""
+		],
+		"btn_submit": "",
+		"id": "60e45f28071a6"
+	},
+	{
+		"question": "qui est traore? 0",
+		"point": "5",
+		"typrep": "checkbox",
+		"nbr_reps": "2",
+		"reponse": [
+			"on",
+			"",
+			"on",
+			""
+		],
+		"btn_submit": "",
+		"id": "60e85869f32d6"
+	},
+	{
+		"question": "qui est traore? 0",
+		"point": "5",
+		"typrep": "checkbox",
+		"nbr_reps": "2",
+		"reponse": [
+			"unn",
+			" quatre"
+		],
+		"btn_submit": "",
+		"id": "60e8588a33dd4"
+	}
+]
